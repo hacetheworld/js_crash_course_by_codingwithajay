@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Todo List</h1>
+        <div class="input-container">
+            <input type="text" id="taskTitle" placeholder="Task Title" value="">
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+        <ul id="todoList" class="todo-list">
+            <!-- Here our task will go -->
+            <!-- <li class="todo-item" style="background-color: red;">
+                <div class="todo-title">todo task </div>
+                <div class="todo-buttons">
+                    <button class="edit-btn">Edit</button>
+                    <button class="delete-btn">Delete</button>
+                </div>
+            </li> -->
+        </ul>
+    </div>
+
+    <!-- modal -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close">&times;</span>
+            <input type="text" id="editTaskTitle" placeholder="Task Title">
+            <button id="saveEditBtn">Save Changes</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
